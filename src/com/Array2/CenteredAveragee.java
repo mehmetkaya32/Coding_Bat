@@ -12,10 +12,12 @@ centeredAverage([1, 1, 5, 5, 10, 8, 7]) → 5
 centeredAverage([-10, -4, -2, -4, -2, 0]) → -3
  */
 
-public class CenteredAverage {
+import java.util.Arrays;
+
+public class CenteredAveragee {
     public static void main(String[] args) {
 
-        System.out.println(centeredAverage(new int[]{1, 2, 3, 4, 100}));
+        System.out.println(centeredAverage(new int[]{1,4,6,9,11}));
     }
 
     public static int centeredAverage(int[] nums) {
@@ -28,9 +30,8 @@ public class CenteredAverage {
             min = Math.min(min, nums[i]);
             max = Math.max(max, nums[i]);
             sum += nums[i];
-        }
 
-        return (sum - max - min) / (nums.length - 2);
+        }
+        return (sum - (min+max) / (nums.length-2));
     }
 }
-
