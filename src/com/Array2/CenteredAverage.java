@@ -14,7 +14,7 @@ centeredAverage([-10, -4, -2, -4, -2, 0]) → -3
 
 public class CenteredAverage {
     public static void main(String[] args) {
-
+//kkkkkkkkk
         System.out.println(centeredAverage(new int[]{1, 2, 3, 4, 100}));
     }
 
